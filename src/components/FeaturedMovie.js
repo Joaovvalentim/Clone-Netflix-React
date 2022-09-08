@@ -18,14 +18,14 @@ export default ({ item }) => {
                 <div className='feature--horizontal'>
                     <div className='feature--name'> {item.original_name} </div>
                     <div className='feature--info'>
-                        <div className='feature--points'>{item.vote_average} pontos</div>
+                        <div className='feature--points'>{item.vote_average.toFixed(1)} pontos</div>
                         <div className='feature--year'>{firstDate.getFullYear()}</div>
                         <div className='feature--seasons'> {item.number_of_seasons} Temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                     </div>
                     <div className='feature--description'> {item.overview} </div>
                     <div className='feature--buttons'>
-                        <a href={`/watch/${item.id}`}>▶ Assistir </a>
-                    <a href={`/list/add/${item.id}`}>+ Minha Lista</a>
+                        <a href={`/watch/${item.id}`} className="feature--watchbutton">▶ Assistir </a>
+                    <a href={`/list/add/${item.id}`} className="feature--mylistbutton">+ Minha Lista</a>
                 </div>
                 <div className='feature--genres'><strong>Gêneros:</strong> {genres.join(', ')} </div>
             </div>
