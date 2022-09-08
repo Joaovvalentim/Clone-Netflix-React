@@ -10,11 +10,9 @@
     overflow-x: hidden;
     padding-left: 30px;
 }
-
-.movieRow--list {
-    width: 9999999px;
+.movieRow--list{
+    transition: ease all 0.5s;
 }
-
 .movieRow--item {
     display: inline-block;
     width: 150px;
