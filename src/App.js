@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Tmdb from "./Tmdb";
+import MovieRow from "./components/MovieRow";
 // eslint-disable-next-line
 export default () => {
-  return(
-      <div>
-    Hello World!
-  </div>
+
+  const [movieList, setMoiveList] = useState([])
+
+
+  useEffect(() => {  //quando minha tela for carregada, esta função será executada
+    const loadAll = async () => {
+      //Pegando a lista dos filmes
+      let list = await Tmdb.getHomeList()
+      setMoiveList(list)
+    }
+    loadAll()
+  }, []);
+
+  return (
+    <div className="page">
+      <section className="lists">
+        {movieList.map((item, key) => (
+          <MovieRow key={key}/>
+        ))}
+      </section>
+    </div>
   );
 }
