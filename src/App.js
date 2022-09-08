@@ -62,6 +62,11 @@ export default () => {
           />
         ))}
       </section>
+      <footer>
+        Feito por João victor Valentim, Front-End Developer<br/>
+          Dados de API consumidos pelo site Themoviedb.org
+
+      </footer>
     </div>
   );
 }
