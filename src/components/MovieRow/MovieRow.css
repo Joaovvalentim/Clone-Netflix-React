@@ -62,7 +62,13 @@
 }
 
 @media(max-width:760px) {
+    .movieRow--left,
+    .movieRow--rigth {
+        opacity: 1;
+    }
+}
 
+@media(max-width:412px) {
     .movieRow--left,
     .movieRow--rigth {
         opacity: 1;

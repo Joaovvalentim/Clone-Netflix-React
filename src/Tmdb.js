@@ -20,6 +20,7 @@ const basicFetch = async (endpoint) => { // manda uma endpoint
 }
 
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     getHomeList: async () => {
         return [
@@ -68,6 +69,7 @@ export default {
         let info = {}
 
         if (movieId) {
+            // eslint-disable-next-line default-case
             switch (type) {
 
                 case 'movie':
