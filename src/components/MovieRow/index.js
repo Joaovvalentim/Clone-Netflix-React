@@ -5,7 +5,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 // eslint-disable-next-line
 export default ({ title, items }) => {
-    const [scrollX, srtScrollX] = useState(-400)
+    const [scrollX, srtScrollX] = useState(0)
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth/2);//aumenta o valor do scrollX da lista baseado no tamanho da tela do usuario
         if (x > 0) {

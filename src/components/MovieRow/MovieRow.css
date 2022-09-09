@@ -10,9 +10,11 @@
     overflow-x: hidden;
     padding-left: 30px;
 }
-.movieRow--list{
+
+.movieRow--list {
     transition: ease all 0.5s;
 }
+
 .movieRow--item {
     display: inline-block;
     width: 150px;
@@ -57,4 +59,12 @@
 .movieRow:hover .movieRow--left,
 .movieRow:hover .movieRow--rigth {
     opacity: 1;
+}
+
+@media(max-width:760px) {
+
+    .movieRow--left,
+    .movieRow--rigth {
+        opacity: 1;
+    }
 }

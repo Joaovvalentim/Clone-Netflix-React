@@ -64,7 +64,7 @@ export default () => {
       </section>
       <footer>
         Feito por João victor Valentim, Front-End Developer<br />
-        Dados de API consumidos pelo site Themoviedb.org
+        Dados consumidos da API Themoviedb.org
 
       </footer>
       {movieList.length <= 0 && //Verifica se a lista de filmes ja apareceu, caso nao, mostra a tela de loading ate os filmes carregarem
@@ -72,7 +72,6 @@ export default () => {
           <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="loading" />
         </div>
       }
-
     </div>
   );
 }
